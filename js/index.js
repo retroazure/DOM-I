@@ -94,9 +94,17 @@ let contactText = document.querySelector(".contact h4");
 
 contactText.innerHTML = siteContent["contact"]["contact-h4"];
 
-let contactP = document.querySelector(".body > div > section.contact > p:nth-child(2)");
+let contactP = document.querySelector("body > div > section.contact > p:nth-child(2)");
 
 contactP.innerHTML = siteContent["contact"]["address"];
 
+let contactP2 = document.querySelector("body > div > section.contact > p:nth-child(3)");
 
+contactP2.innerHTML = siteContent["contact"]["phone"];
 
+let contactP3 = document.querySelector("body > div > section.contact > p:nth-child(4)");
+
+contactP3.innerHTML = siteContent["contact"]["email"];
+
+let footerContent = document.querySelector("footer p");
+footerContent.innerHTML = siteContent["footer"]["copyright"];
