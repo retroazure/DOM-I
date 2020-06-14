@@ -54,6 +54,18 @@ for(let i = 1; i<7; i++){
   
 }
 
+let navextra = document.querySelector("nav");
+let miscnav = document.createElement("a");
+miscnav.innerHTML = "Miscellaneous";
+navextra.appendChild(miscnav).style.color = "green";
+
+let navextra2 = document.querySelector("nav");
+let miscnav2 = document.createElement("a");
+miscnav2.innerHTML = "Portfolio";
+navextra2.insertBefore(miscnav2, navextra2.firstChild).style.color = "green";
+
+
+
 let ctaHeader = document.querySelector("h1");
 ctaHeader.innerHTML = siteContent["cta"]["h1"];
 
